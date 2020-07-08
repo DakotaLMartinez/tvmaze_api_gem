@@ -1,4 +1,4 @@
-# TvmazeApiGem
+# How to Set Up a CLI Data Gem
 
 This is how you start a gem from scratch for your CLI project:
 
