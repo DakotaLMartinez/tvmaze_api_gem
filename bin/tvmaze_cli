@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require_relative "../lib/tvmaze_api_gem"
+
+TvmazeApiGem::CLI.new.start
