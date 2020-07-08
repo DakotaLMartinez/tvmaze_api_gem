@@ -159,6 +159,24 @@ module TvmazeApiGem
   end
 end
 ```
+
+## Updating your Repo on GitHub
+
+Once you've got some code working and you want to share it with the world, you can do so by running the following git commands:
+
+``` 
+git add .
+```
+This command will add all of the changes in your working directory to a staging area so they can be commited to your local repository.
+```
+git commit -m "a message describing what I did"
+```
+This command actually puts the changes into the repository, creates a SHA reference to the change and attaches your message to it.
+
+```
+git push
+```
+This command takes your local changes and pushes them to the remote version of the branch (in this case your GitHub repository)
 ## Installation
 
 Add this line to your application's Gemfile:
