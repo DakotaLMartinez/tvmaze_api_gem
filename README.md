@@ -91,6 +91,38 @@ If your CLI data gem relies on other gems to deliver its functionality, you'll w
 ```
 spec.add_dependency "http"
 ```
+## Creating your Executable File
+
+Your executable file will be the phrase that a user types into their terminal to start your program. In this case, ours is called `tvmaze_cli`. If you create this file through the VSCode interface, it won't have executable permissions by default.  You'll need to run a command to add those that looks like this (with your file name replacing mine)
+```
+chmod +x bin/tvmaze_cli
+```
+
+You can check that this has worked correctly by running this command:
+```
+ls -al bin
+```
+When you run this you should see something like this:
+```
+drwxr-xr-x   5 dakota.martinez  staff  170 Jul  8 12:53 .
+drwxr-xr-x  13 dakota.martinez  staff  442 Jul  8 13:06 ..
+-rwxr-xr-x   1 dakota.martinez  staff  349 Jul  8 12:33 console
+-rwxr-xr-x   1 dakota.martinez  staff  131 Jul  8 12:33 setup
+-rwxr-xr-x   1 dakota.martinez  staff  114 Jul  8 13:30 tvmaze_cli
+```
+To actually run your program and test it out as you develop, you'll type this in the terminal:
+```
+./bin/tvmaze_cli
+```
+
+ You'll want to make sure you run this from you project's root directory (you can see where your terminal is active by running the `pwd` command, when you do that you should see the name of your gem at the end of the path that is printed)
+
+For me, it looks like this:
+  ```
+  /Users/dakota.martinez/Development/projects/tvmaze_api_gem
+  ```
+
+
 
 ## Loading Files and Other Plumbing Issues
 Your gem's executable file, should look something like this:
@@ -179,3 +211,26 @@ git push
 This command takes your local changes and pushes them to the remote version of the branch (in this case your GitHub repository)
 
 You'll also want to take a look at the README.md file that was created for you and add any relevant information there. For example, if your project relies on an API, you can add instructions here on how to access the API documentation and get an API key if necessary. 
+
+
+## Terminology to Review and Understand How to Use
+
+- Class 
+- Instance
+- method 
+- iteration 
+- self 
+- variable 
+- variable scope
+- class method 
+- instance method
+- class variable 
+- instance variable 
+- local variable 
+- Truthy
+- Falsey
+- Conditional Logic (if statements)
+- Loops (While, until, loop...)
+- Return values (implicit returns)
+- How to figure out what a method returns
+- What Ruby methods return (puts, each, collect, etc.)
